@@ -1,0 +1,17 @@
+def sq(num):
+    list1=[]
+    words = list(str(num)) # split the text
+    for word in words:  # for each word in the line:
+        i=int(word)**2 # print the word
+        print(i,end="")
+        w1=list(str(i))
+        for w in w1:
+            j=int(w)
+            if(j%2==0):
+                list1.append(j)
+                
+    word1="".join([str(elem)for elem in list1])
+    print("\n",word1)   
+  
+num =int(input("enter a number"))
+sq(num)
