@@ -1,0 +1,8 @@
+def merge(dic1,dic2):
+    return (dic1.update(dic2))
+dic1={'a':'one','b':'two','c':'three'}
+dic2={'d':'four','e':'five'}
+print("the first dictionary",dic1)
+print("the second dictionary",dic2)
+merge(dic1,dic2)
+print("the merged dictionaryis:",dic1)
